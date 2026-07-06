@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nosotros — Núcleo Software</title>
+<meta name="description" content="Por qué existe Núcleo Software y cómo trabajamos con negocios locales en Medellín.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero { padding: 72px 0 20px; }
+.page-hero h1 { margin-top: 14px; max-width: 780px; }
+.page-hero p { max-width: 560px; margin-top: 16px; font-size: 1.05rem; }
+
+.story-grid { display: grid; grid-template-columns: 0.55fr 1fr; gap: 48px; }
+.story-grid p { color: var(--text-primary); font-size: 1rem; margin-bottom: 18px; }
+.story-grid p:last-child { margin-bottom: 0; }
+
+.values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+
+@media (max-width: 860px) {
+  .story-grid { grid-template-columns: 1fr; gap: 20px; }
+  .values-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="mainnav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html" aria-current="page">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Nosotros</span>
+    <h1>Entendemos negocios primero, y el software después</h1>
+    <p>Núcleo Software nace de haber estado del otro lado: coordinando procesos y operaciones reales antes de dedicarme al desarrollo de software.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap story-grid">
+    <div class="section-head" style="margin-bottom:0;">
+      <span class="eyebrow">Cómo pensamos</span>
+      <h2>Un enfoque analítico, aplicado a tu operación</h2>
+    </div>
+    <div>
+      <p>Antes de programar, pasé años coordinando procesos de producción: turnos, tiempos, gente, entregas. Esa experiencia me enseñó algo que muchos desarrolladores no ven de primera mano: el software solo sirve si se ajusta a cómo el negocio ya opera, no al revés.</p>
+      <p>Por eso el trabajo con cada negocio empieza por entender el proceso real, antes de proponer una solución. Un bot, una web o una aplicación no valen nada si no resuelven algo que de verdad estaba costando tiempo o clientes.</p>
+      <p>Ese mismo enfoque metódico y analítico es el que aplico a cada proyecto: revisar el detalle, probar antes de entregar, y construir algo que siga funcionando cuando el negocio crezca o cambie.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Cómo trabajamos con cada negocio</span>
+      <h2>Tres principios que no negociamos</h2>
+    </div>
+    <div class="values-grid">
+      <div class="card">
+        <span class="node-tag amber">Entender antes de construir</span>
+        <h3>El proceso real primero</h3>
+        <p>Cada solución parte de cómo tu negocio opera hoy, no de un producto genérico ya armado.</p>
+      </div>
+      <div class="card">
+        <span class="node-tag amber">Simple de usar</span>
+        <h3>Pensado para ti, no para un técnico</h3>
+        <p>Si tú o tu equipo no lo pueden usar sin ayuda todos los días, no está terminado.</p>
+      </div>
+      <div class="card">
+        <span class="node-tag amber">Acompañamiento real</span>
+        <h3>Seguimos después de la entrega</h3>
+        <p>Un negocio cambia con el tiempo, y la solución tiene que poder ajustarse con él.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" style="text-align:center;">
+  <div class="wrap" style="max-width:640px;">
+    <span class="eyebrow">Conversemos</span>
+    <h2 style="margin-top:14px;">Cuéntame cómo funciona tu negocio hoy</h2>
+    <p style="margin-top:14px; font-size:1.05rem;">De ahí partimos para ver qué tiene sentido construir primero.</p>
+    <div class="hero-cta" style="justify-content:center; margin-top:28px;">
+      <a class="btn btn-primary" href="contacto.html">Escríbenos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <p>© 2026 Núcleo Software · Medellín, Colombia</p>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

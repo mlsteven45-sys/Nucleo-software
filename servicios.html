@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Núcleo Software</title>
+<meta name="description" content="Bots de WhatsApp con IA, páginas web y aplicaciones a medida para negocios locales.">
+<link rel="stylesheet" href="style.css">
+<style>
+.page-hero { padding: 72px 0 20px; }
+.page-hero h1 { margin-top: 14px; }
+.page-hero p { max-width: 560px; margin-top: 16px; font-size: 1.05rem; }
+
+.service-block { display: grid; grid-template-columns: 0.5fr 1fr; gap: 48px; align-items: start; }
+.service-block + .service-block { margin-top: 0; }
+.service-num { font-family: var(--font-mono); color: var(--text-faint); font-size: 0.85rem; }
+.service-block h2 { margin-top: 10px; }
+
+.feature-list { display: flex; flex-direction: column; gap: 18px; margin-top: 24px; }
+.feature-item { border-top: 0.5px solid var(--line); padding-top: 16px; }
+.feature-item h3 { font-size: 0.98rem; }
+.feature-item p { font-size: 0.9rem; margin-top: 6px; }
+
+.for-whom { margin-top: 24px; background: var(--bg-panel); border: 0.5px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+.for-whom .eyebrow { display: block; margin-bottom: 8px; }
+.for-whom p { font-size: 0.92rem; color: var(--text-primary); }
+
+@media (max-width: 860px) {
+  .service-block { grid-template-columns: 1fr; gap: 20px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="mainnav">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" aria-current="page">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Servicios</span>
+    <h1>Tres piezas, un mismo objetivo: que tu negocio funcione sin depender de estar siempre presente</h1>
+    <p>Puedes empezar por una sola pieza o combinarlas. Cada solución se construye sobre cómo opera tu negocio hoy, no sobre una plantilla genérica.</p>
+  </div>
+</section>
+
+<section class="service-block">
+  <div class="wrap" style="display:contents;">
+    <div>
+      <span class="service-num">01 / Automatización</span>
+      <h2>Bots de WhatsApp con IA</h2>
+      <p>Un asistente que conversa con tus clientes en lenguaje natural, agenda citas revisando tu disponibilidad real, y avisa cuando algo necesita atención humana.</p>
+      <div class="for-whom">
+        <span class="eyebrow">Para quién</span>
+        <p>Negocios que reciben pedidos o citas por WhatsApp y pierden tiempo (o clientes) coordinando todo a mano.</p>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Conversación natural</h3>
+        <p>El bot entiende lo que el cliente pide, no solo comandos fijos ni menús rígidos.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Agenda con disponibilidad real</h3>
+        <p>Se conecta a tu calendario para ofrecer solo horarios que de verdad están libres.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Memoria del cliente</h3>
+        <p>Recuerda conversaciones anteriores para no hacer que el cliente repita todo cada vez.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Seguimiento y recordatorios</h3>
+        <p>Avisa antes de una cita y hace seguimiento después del servicio, sin que tengas que acordarte tú.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Escalamiento a un asesor</h3>
+        <p>Cuando el caso lo requiere, el bot lo pasa a una persona en lugar de improvisar una respuesta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-block">
+  <div class="wrap" style="display:contents;">
+    <div>
+      <span class="service-num">02 / Presencia</span>
+      <h2>Páginas web</h2>
+      <p>Un sitio propio, rápido y claro, que le muestra a tus clientes quién eres, qué ofreces y cómo contactarte, sin depender solo de una red social.</p>
+      <div class="for-whom">
+        <span class="eyebrow">Para quién</span>
+        <p>Negocios que hoy solo existen en redes sociales y necesitan un lugar propio con más control y más credibilidad.</p>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Diseño hecho para tu negocio</h3>
+        <p>Sin plantillas genéricas: la identidad visual se piensa para lo que tú vendes.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Catálogo de servicios o productos</h3>
+        <p>Con precios, descripciones y fotos, organizado para que el cliente decida rápido.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Contacto directo</h3>
+        <p>Botones a WhatsApp, formularios o el canal que ya usas para atender.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Rápida y responsiva</h3>
+        <p>Se ve bien en el teléfono, que es donde la mayoría de tus clientes te va a encontrar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="service-block">
+  <div class="wrap" style="display:contents;">
+    <div>
+      <span class="service-num">03 / A medida</span>
+      <h2>Aplicaciones a medida</h2>
+      <p>Herramientas hechas para una necesidad puntual de tu negocio: control interno, gestión de clientes, reportes, o algo que tus clientes usan directamente.</p>
+      <div class="for-whom">
+        <span class="eyebrow">Para quién</span>
+        <p>Negocios con un proceso específico que ya no cabe en una hoja de cálculo ni en un bot simple.</p>
+      </div>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Construida para tu proceso</h3>
+        <p>No partimos de un producto genérico: la herramienta se arma alrededor de cómo trabajas.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Panel de control</h3>
+        <p>Ves lo que necesitas ver, sin tener que buscarlo entre hojas de cálculo o chats.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Integraciones</h3>
+        <p>Conectada con lo que ya usas: calendario, WhatsApp, base de datos de clientes.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Acompañamiento después de la entrega</h3>
+        <p>Ajustes y soporte cuando el negocio cambia o crece.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" style="text-align:center;">
+  <div class="wrap" style="max-width:640px;">
+    <span class="eyebrow">Siguiente paso</span>
+    <h2 style="margin-top:14px;">¿Cuál de estos tres necesita tu negocio primero?</h2>
+    <p style="margin-top:14px; font-size:1.05rem;">Cuéntanos cómo operas hoy y te decimos por dónde empezar.</p>
+    <div class="hero-cta" style="justify-content:center; margin-top:28px;">
+      <a class="btn btn-primary" href="contacto.html">Escríbenos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <p>© 2026 Núcleo Software · Medellín, Colombia</p>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>

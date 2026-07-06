@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Núcleo Software — Bots con IA, webs y apps para tu negocio</title>
+<meta name="description" content="Núcleo Software desarrolla bots con IA, páginas web y aplicaciones a medida para negocios que quieren dejar de perder clientes por procesos manuales.">
+<link rel="stylesheet" href="style.css">
+<style>
+.hero {
+  padding: 90px 0 60px;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 40px;
+  align-items: center;
+}
+.hero h1 { margin-top: 16px; }
+.hero p.lead { font-size: 1.15rem; margin-top: 20px; max-width: 480px; }
+.hero-cta { display: flex; gap: 14px; margin-top: 32px; flex-wrap: wrap; }
+
+.orbit-hero { width: 100%; max-width: 480px; margin: 0 auto; overflow: visible; }
+.ring { fill: none; stroke: var(--line-strong); stroke-width: 1; }
+.core-circle { fill: url(#coreGrad); filter: url(#coreShadow); }
+.core-label-main { font-family: var(--font-display); font-weight: 600; font-size: 15px; fill: #241703; text-anchor: middle; }
+.core-label-sub { font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.06em; fill: #4a340f; text-anchor: middle; }
+.node-circle { fill: url(#nodeGrad); stroke: var(--orbit-teal); stroke-width: 1.2; filter: url(#nodeShadow); }
+.node-icon { fill: none; stroke: var(--orbit-teal); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.node-label { font-family: var(--font-display); font-weight: 500; font-size: 13px; fill: var(--text-primary); text-anchor: middle; }
+.pulse { fill: var(--core-amber); }
+.orbit-rotate-1 { animation: orbit 22s linear infinite; transform-box: view-box; transform-origin: 240px 240px; }
+.orbit-rotate-2 { animation: orbit 34s linear infinite reverse; transform-box: view-box; transform-origin: 240px 240px; }
+@keyframes orbit { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.problem { }
+.problem-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: start; }
+.problem-list { display: flex; flex-direction: column; gap: 22px; margin-top: 8px; }
+.problem-item { display: flex; gap: 16px; border-top: 0.5px solid var(--line); padding-top: 18px; }
+.problem-item .mark { font-family: var(--font-mono); color: var(--text-faint); font-size: 0.8rem; padding-top: 3px; }
+.problem-item h3 { font-size: 1.02rem; }
+.problem-item p { font-size: 0.92rem; margin-top: 6px; }
+
+.services-preview .grid-3 { margin-top: 8px; }
+
+.process-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border: 0.5px solid var(--line); border-radius: 14px; overflow: hidden; }
+.process-step { padding: 26px 22px; border-right: 0.5px solid var(--line); }
+.process-step:last-child { border-right: none; }
+.process-step .num { font-family: var(--font-mono); color: var(--core-amber); font-size: 0.85rem; }
+.process-step h3 { font-size: 1rem; margin-top: 10px; }
+.process-step p { font-size: 0.85rem; margin-top: 8px; }
+
+.cta-band { text-align: center; }
+.cta-band .wrap { max-width: 640px; }
+.cta-band h2 { margin-top: 14px; }
+.cta-band p { margin-top: 14px; font-size: 1.05rem; }
+.cta-band .hero-cta { justify-content: center; margin-top: 28px; }
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; padding-top: 50px; }
+  .hero .orbit-hero { order: -1; max-width: 300px; }
+  .problem-grid { grid-template-columns: 1fr; gap: 32px; }
+  .process-strip { grid-template-columns: 1fr; }
+  .process-step { border-right: none; border-bottom: 0.5px solid var(--line); }
+  .process-step:last-child { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="mainnav">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap" style="display:contents;">
+    <div>
+      <span class="eyebrow">Desarrollo de software para negocios locales</span>
+      <h1>El núcleo digital detrás de tu negocio</h1>
+      <p class="lead">Diseñamos bots con IA, páginas web y aplicaciones a medida para que tu negocio atienda, agende y haga seguimiento a clientes sin depender de procesos manuales.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="contacto.html">Hablemos de tu negocio</a>
+        <a class="btn" href="servicios.html">Ver servicios</a>
+      </div>
+    </div>
+    <svg class="orbit-hero" viewBox="0 0 480 480" role="img" aria-label="Diagrama de un núcleo central con tres servicios orbitando a su alrededor: bots con IA, páginas web y aplicaciones">
+      <defs>
+        <radialGradient id="coreGrad" cx="35%" cy="30%" r="75%">
+          <stop offset="0%" style="stop-color:#F5BE72"></stop>
+          <stop offset="100%" style="stop-color:var(--core-amber)"></stop>
+        </radialGradient>
+        <radialGradient id="nodeGrad" cx="35%" cy="30%" r="75%">
+          <stop offset="0%" style="stop-color:var(--bg-panel-raised)"></stop>
+          <stop offset="100%" style="stop-color:var(--bg-panel)"></stop>
+        </radialGradient>
+        <filter id="coreShadow" x="-60%" y="-60%" width="220%" height="220%">
+          <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.35"></feDropShadow>
+        </filter>
+        <filter id="nodeShadow" x="-60%" y="-60%" width="220%" height="220%">
+          <feDropShadow dx="0" dy="4" stdDeviation="7" flood-color="#000000" flood-opacity="0.28"></feDropShadow>
+        </filter>
+      </defs>
+
+      <circle class="ring" cx="240" cy="240" r="185"></circle>
+      <circle class="ring" cx="240" cy="240" r="125"></circle>
+
+      <g class="orbit-rotate-1">
+        <circle class="pulse" cx="240" cy="55" r="4"></circle>
+      </g>
+      <g class="orbit-rotate-2">
+        <circle class="pulse" cx="240" cy="115" r="3.5"></circle>
+      </g>
+
+      <g transform="translate(240,64)">
+        <circle class="node-circle" r="50"></circle>
+        <rect class="node-icon" x="-11" y="-24" width="22" height="15" rx="4" fill="none"></rect>
+        <path class="node-icon" d="M -4,-9 L 0,-3 L 4,-9" fill="none"></path>
+        <circle cx="-4.5" cy="-16.5" r="1.3" fill="var(--orbit-teal)" stroke="none"></circle>
+        <circle cx="0" cy="-16.5" r="1.3" fill="var(--orbit-teal)" stroke="none"></circle>
+        <circle cx="4.5" cy="-16.5" r="1.3" fill="var(--orbit-teal)" stroke="none"></circle>
+        <text class="node-label" x="0" y="20">Bots IA</text>
+      </g>
+
+      <g transform="translate(88,326)">
+        <circle class="node-circle" r="50"></circle>
+        <rect class="node-icon" x="-12" y="-24" width="24" height="17" rx="3" fill="none"></rect>
+        <line class="node-icon" x1="-12" y1="-19" x2="12" y2="-19"></line>
+        <circle cx="-8.5" cy="-21.5" r="0.9" fill="var(--orbit-teal)" stroke="none"></circle>
+        <text class="node-label" x="0" y="20">Web</text>
+      </g>
+
+      <g transform="translate(392,326)">
+        <circle class="node-circle" r="50"></circle>
+        <polyline class="node-icon" points="-6,-24 -12,-16 -6,-8" fill="none"></polyline>
+        <polyline class="node-icon" points="6,-24 12,-16 6,-8" fill="none"></polyline>
+        <text class="node-label" x="0" y="20">Apps</text>
+      </g>
+
+      <circle class="core-circle" cx="240" cy="240" r="50"></circle>
+      <text class="core-label-main" x="240" y="236">Núcleo</text>
+      <text class="core-label-sub" x="240" y="250">SOFTWARE</text>
+    </svg>
+  </div>
+</section>
+
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="section-head" style="margin-bottom:0;">
+      <span class="eyebrow">El problema</span>
+      <h2>Tu negocio ya funciona. Pero parte de él todavía depende de que alguien esté disponible.</h2>
+    </div>
+    <div class="problem-list">
+      <div class="problem-item">
+        <span class="mark">→</span>
+        <div>
+          <h3>Mensajes que se responden tarde o nunca</h3>
+          <p>Un cliente escribe fuera de horario, nadie contesta, y busca en otro lado.</p>
+        </div>
+      </div>
+      <div class="problem-item">
+        <span class="mark">→</span>
+        <div>
+          <h3>Citas y pedidos que se coordinan a mano</h3>
+          <p>Cuadrar horarios por chat toma tiempo y es fácil que se crucen o se olviden.</p>
+        </div>
+      </div>
+      <div class="problem-item">
+        <span class="mark">→</span>
+        <div>
+          <h3>Sin un sitio o sistema propio</h3>
+          <p>La presencia del negocio depende solo de redes sociales o de boca a boca.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services-preview">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Lo que hacemos</span>
+      <h2>Tres formas de quitarle trabajo manual a tu negocio</h2>
+      <p>Cada servicio se adapta al tamaño y al momento de tu negocio, no al revés.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <span class="node-tag teal">Automatización</span>
+        <h3>Bots de WhatsApp con IA</h3>
+        <p>Atienden, agendan y hacen seguimiento a tus clientes las 24 horas, con las respuestas de tu propio negocio.</p>
+      </div>
+      <div class="card">
+        <span class="node-tag teal">Presencia</span>
+        <h3>Páginas web</h3>
+        <p>Un sitio propio donde tu negocio se ve como merece, con la información que tus clientes necesitan para decidir.</p>
+      </div>
+      <div class="card">
+        <span class="node-tag teal">A medida</span>
+        <h3>Aplicaciones a medida</h3>
+        <p>Herramientas internas o para tus clientes, construidas para tu forma de operar, no para un caso genérico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Cómo trabajamos</span>
+      <h2>Un proceso corto, sin vueltas</h2>
+    </div>
+    <div class="process-strip">
+      <div class="process-step">
+        <span class="num">01</span>
+        <h3>Diagnóstico</h3>
+        <p>Entendemos cómo opera tu negocio hoy y dónde se pierde tiempo o clientes.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">02</span>
+        <h3>Diseño</h3>
+        <p>Definimos qué construir y cómo se va a ver y sentir para ti y tus clientes.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">03</span>
+        <h3>Desarrollo</h3>
+        <p>Construimos la solución y la probamos contigo antes de entregarla.</p>
+      </div>
+      <div class="process-step">
+        <span class="num">04</span>
+        <h3>Entrega y soporte</h3>
+        <p>Queda funcionando y te acompañamos si algo necesita ajuste.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <span class="eyebrow">Empecemos</span>
+    <h2>Cuéntanos cómo opera tu negocio hoy</h2>
+    <p>En una conversación corta te decimos qué tiene más sentido construir primero.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="contacto.html">Escríbenos</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot" aria-hidden="true"></span>Núcleo Software</a>
+    <p>© 2026 Núcleo Software · Medellín, Colombia</p>
+  </div>
+</footer>
+
+<script src="nav.js"></script>
+</body>
+</html>
